@@ -1,5 +1,5 @@
+import { Key } from "react"
 import { IconType } from "react-icons"
-import { Key } from "readline"
 
 export interface iService {
     id: Key | null | undefined
