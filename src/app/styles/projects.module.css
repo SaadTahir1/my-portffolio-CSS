@@ -1,0 +1,37 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
+    margin-top: 3.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  
+  .sidebar {
+    grid-column: span 12;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  @media (min-width: 1024px) {
+    .sidebar {
+      grid-column: span 3;
+    }
+  }
+  
+  .mainContent {
+    grid-column: span 12;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (min-width: 1024px) {
+    .mainContent {
+      grid-column: span 9;
+    }
+  }
+  

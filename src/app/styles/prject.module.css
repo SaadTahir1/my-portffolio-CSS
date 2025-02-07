@@ -1,0 +1,32 @@
+.projectsContainer {
+    padding: 0.5rem 1.25rem;
+    overflow-y: scroll;
+    height: 65vh;
+  }
+  
+  .gridContainer {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    margin-top: 0.75rem;
+  }
+  
+  .gridItem {
+    grid-column: span 12;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  @media (min-width: 640px) {
+    .gridItem {
+      grid-column: span 6;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .gridItem {
+      grid-column: span 4;
+    }
+  }
+  

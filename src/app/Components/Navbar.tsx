@@ -3,6 +3,7 @@
 import { FunctionComponent, useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import styles from "../styles/navbar.module.css"; // Import custom CSS
 
 const NavItem: FunctionComponent<{
   activeItem: string;
@@ -11,14 +12,14 @@ const NavItem: FunctionComponent<{
   route: string;
 }> = ({ activeItem, name, route, setActiveItem }) => {
   return activeItem !== name ? (
-    <Link href={route} className="cursor-pointer">
-      <span onClick={() => setActiveItem(name)} className="hover:text-green">
-        {" "}
-        {name}{" "}
+    <Link href={route} className={styles.navLink}>
+      <span onClick={() => setActiveItem(name)} className={styles.navItem}>
+        {name}
       </span>
     </Link>
   ) : null;
 };
+
 const Navbar = () => {
   const [activeItem, setActiveItem] = useState<string>("");
   const pathname = usePathname();
@@ -30,11 +31,9 @@ const Navbar = () => {
   }, [pathname]);
 
   return (
-    <div className="flex justify-between px-5 py-3 ">
-      <span className="font-bold text-green text-xl border-b-4 border-green md:text-2xl">
-        {activeItem}
-      </span>
-      <div className=" text-lg flex space-x-5">
+    <div className={styles.navbar}>
+      <span className={styles.activeItem}>{activeItem}</span>
+      <div className={styles.navLinks}>
         <NavItem
           activeItem={activeItem}
           setActiveItem={setActiveItem}

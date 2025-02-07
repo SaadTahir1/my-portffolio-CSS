@@ -8,45 +8,45 @@ import { BsCircleFill } from "react-icons/bs";
 export const services: iService[] = [
 
     {
-        Icon: RiComputerLine ,
-        title: "Front-End Developer",
-        about:
-        'I can build a beautiful and scalable SPA using <b> HTML </b> , <b> CSS </b> and various frameworks.',
+      Icon: RiComputerLine,
+      title: "Front-End Developer",
+      about: 'I can build a beautiful and scalable SPA using <b> HTML </b> , <b> CSS </b> and various frameworks.',
+      id: undefined
     },
 
     {
-        Icon: FaServer , 
-        title: "Back-End Developer",
-        about: 
-        "handle database, server, api using <b> Express </b> and other popular frameworks.",
+      Icon: FaServer,
+      title: "Back-End Developer",
+      about: "handle database, server, api using <b> Express </b> and other popular frameworks.",
+      id: undefined
     },
 
     {
-        Icon: AiOutlineApi , 
-        title: "API Development",
-        about: 
-        "I can develop robust REST API using <b> Django-rest-api </b> & <b> Node API </b> .",
+      Icon: AiOutlineApi,
+      title: "API Development",
+      about: "I can develop robust REST API using <b> Django-rest-api </b> & <b> Node API </b> .",
+      id: undefined
     },
 
     {
-        Icon: MdDeveloperMode , 
-        title: "Competitive Coder",
-        about: 
-        " a daily problem solver in <b>HackerRank </b> and <b> LeetCode </b> ",
+      Icon: MdDeveloperMode,
+      title: "Competitive Coder",
+      about: " a daily problem solver in <b>HackerRank </b> and <b> LeetCode </b> ",
+      id: undefined
     },
 
     {
-        Icon: AiOutlineAntDesign , 
-        title: "UI/UX designer",
-        about: 
-        "stunning user interface designer using <b> Figma </b> and <b> Framer </b> .",
+      Icon: AiOutlineAntDesign,
+      title: "UI/UX designer",
+      about: "stunning user interface designer using <b> Figma </b> and <b> Framer </b> .",
+      id: undefined
     },
 
     {
-        Icon: RiComputerLine ,
-        title: "Trader",
-        about:
-        'I also do trading of Ethereum , SOLANA , BitCoin and other coins.',
+      Icon: RiComputerLine,
+      title: "Trader",
+      about: 'I also do trading of Ethereum , SOLANA , BitCoin and other coins.',
+      id: undefined
     },
 ];
 

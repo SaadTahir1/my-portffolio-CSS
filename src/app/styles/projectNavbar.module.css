@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.75rem 0;
+  }
+  
+  .navItem {
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .navItem:hover {
+    color: #10b981; /* green */
+  }
+  
+  .active {
+    font-weight: bold;
+    border-bottom: 4px solid #10b981; /* green */
+  }
+  

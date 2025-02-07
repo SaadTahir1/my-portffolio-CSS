@@ -1,0 +1,19 @@
+.barContainer {
+    margin: 0.5rem 0;
+    background-color: #d1d5db; /* gray-300 */
+    border-radius: 9999px;
+    color: white;
+  }
+  
+  .bar {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 1rem;
+    border-radius: 9999px;
+    background: linear-gradient(to right, #008000, #3b82f6); /* Green to Blue-500 */
+  }
+  
+  .icon {
+    margin-right: 0.75rem;
+  }
+  

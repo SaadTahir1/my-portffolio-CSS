@@ -1,32 +1,42 @@
 import { FunctionComponent } from "react";
-import { Category } from "../../../type";
-
-export const NavItem: FunctionComponent<{
-  value: Category | "all";
-  handlerFilterCategory: Function;
-  active: string;
-}> = ({ value, handlerFilterCategory, active }) => {
-  let className = "capitalize cursor-pointer hover:text-green";
-  if (active === value) className += " text-green";
-
-  return (
-    <li className={className} onClick={() => handlerFilterCategory(value)}>
-      {value}
-    </li>
-  );
-};
+import styles from "../styles/projectNavbar.module.css"; // Import custom CSS
 
 const ProjectNavbar: FunctionComponent<{
-  handlerFilterCategory: Function;
+  handleFilterCategory: (category: string) => void;
   active: string;
-}> = (props) => {
+}> = ({ handleFilterCategory, active }) => {
   return (
-    <div className="flex px-3 py-2 space-x-3 overflow-x-auto list-none">
-      <NavItem value="all" {...props} />
-      <NavItem value="react" {...props} />
-      <NavItem value="mongo" {...props} />
-      <NavItem value="django" {...props} />
-      <NavItem value="node" {...props} />
+    <div className={styles.navbar}>
+      <button
+        className={`${styles.navItem} ${active === "all" ? styles.active : ""}`}
+        onClick={() => handleFilterCategory("all")}
+      >
+        All
+      </button>
+      <button
+        className={`${styles.navItem} ${active === "react" ? styles.active : ""}`}
+        onClick={() => handleFilterCategory("react")}
+      >
+        React
+      </button>
+      <button
+        className={`${styles.navItem} ${active === "nextjs" ? styles.active : ""}`}
+        onClick={() => handleFilterCategory("nextjs")}
+      >
+        Next.js
+      </button>
+      <button
+        className={`${styles.navItem} ${active === "node" ? styles.active : ""}`}
+        onClick={() => handleFilterCategory("node")}
+      >
+        Node
+      </button>
+      <button
+        className={`${styles.navItem} ${active === "django" ? styles.active : ""}`}
+        onClick={() => handleFilterCategory("django")}
+      >
+        Django
+      </button>
     </div>
   );
 };

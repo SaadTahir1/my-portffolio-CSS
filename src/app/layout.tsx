@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import styles from "./styles/page.module.css";  // Updated path
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -24,8 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body className="bg-gradient-to-r from-green to-blue-400">
+    <html lang="en">
+      <body className={styles.bgGradient}>
         {children}
       </body>
     </html>

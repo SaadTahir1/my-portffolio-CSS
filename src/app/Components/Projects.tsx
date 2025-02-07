@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCard";
 import ProjectNavbar from "./ProjectNavbar";
 import { projects as projectsData } from "../../../data";
 import { Category } from "../../../type";
+import styles from "../styles/prject.module.css"; // Import custom CSS
 
 const Projects = () => {
   const [projects, setProjects] = useState(projectsData);
@@ -24,16 +25,16 @@ const Projects = () => {
   };
 
   return (
-    <div className="px-5 py-2 overflow-y-scroll" style={{ height: "65vh" }}>
+    <div className={styles.projectsContainer}>
       <ProjectNavbar
-        handlerFilterCategory={handlerFilterCategory}
+        handleFilterCategory={handlerFilterCategory}
         active={active}
       />
 
-      <div className="relative grid grid-cols-12 gap-4 my-3">
+      <div className={styles.gridContainer}>
         {projects.map((project) => (
-          <div className="col-span-12 p-2 rounded-lg sm:col-span-6 lg:col-span-4">
-            <ProjectCard project={project} key={project.name} />
+          <div className={styles.gridItem} key={project.name}>
+            <ProjectCard project={project} />
           </div>
         ))}
       </div>

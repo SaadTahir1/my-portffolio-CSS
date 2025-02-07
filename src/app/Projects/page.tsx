@@ -1,19 +1,20 @@
-import Navbar from "../Components/Navbar"
-import Projects from "../Components/Projects"
-import Sidebar from "../Components/Sidebar"
+import Navbar from "../Components/Navbar";
+import Projects from "../Components/Projects";
+import Sidebar from "../Components/Sidebar";
+import styles from "../styles/projects.module.css";  // Import custom CSS
 
-const page = () => {
+const Page = () => {
   return (
-    <div className="grid grid-cols-12 gap-6 my-14 lg:px-48 px-5 sm:px-20 md:px-32">
-      <div className="lg:col-span-3 bg-white rounded-2xl col-span-12 p-4 text-center">
+    <div className={styles.container}>
+      <div className={styles.sidebar}>
         <Sidebar />
       </div>
-      <div className="lg:col-span-9 bg-white rounded-2xl col-span-12 flex flex-col">
-      <Navbar />
-         <Projects />
+      <div className={styles.mainContent}>
+        <Navbar />
+        <Projects />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default Page;

@@ -1,0 +1,87 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
+    margin-top: 3.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  
+  .sidebar {
+    grid-column: span 12;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  @media (min-width: 1024px) {
+    .sidebar {
+      grid-column: span 3;
+    }
+  }
+  
+  .mainContent {
+    grid-column: span 12;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (min-width: 1024px) {
+    .mainContent {
+      grid-column: span 9;
+    }
+  }
+  
+  .content {
+    padding: 1.5rem;
+  }
+  
+  .educationExperience {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .educationExperience {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .heading {
+    margin: 0.75rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .subHeading {
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .institution {
+    font-weight: 600;
+  }
+  
+  .description {
+    margin-top: 0.75rem;
+  }
+  
+  .skills {
+    display: grid;
+    gap: 2.25rem;
+  }
+  
+  @media (min-width: 768px) {
+    .skills {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .barContainer {
+    margin-top: 0.5rem;
+  }
+  

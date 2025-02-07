@@ -1,0 +1,89 @@
+.sidebar {
+    text-align: center;
+  }
+  
+  .avatar {
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 2px solid black;
+  }
+  
+  .name {
+    margin: 1rem 0;
+    font-size: 1.875rem;
+  }
+  
+  .highlight {
+    color: #16a34a; /* Tailwind's green-500 */
+  }
+  
+  .role {
+    background-color: #e5e7eb; /* Tailwind's gray-200 */
+    padding: 0.5rem;
+    border-radius: 9999px;
+    margin: 0.75rem 0;
+  }
+  
+  .resumeBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    background-color: #e5e7eb;
+    border-radius: 9999px;
+    cursor: pointer;
+    margin: 0.5rem 0;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .socialIcon {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    color: #16a34a; /* Tailwind's green-500 */
+  }
+  
+  .contact {
+    background-color: #e5e7eb;
+    padding: 1rem;
+    margin: 1rem -1rem;
+  }
+  
+  .contactItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .email,
+  .phone {
+    margin: 0.5rem 0;
+  }
+  
+  .emailBtn,
+  .talkBtn {
+    width: 66.67%;
+    padding: 0.5rem;
+    color: white;
+    background: linear-gradient(to right, #16a34a, #3b82f6); /* Green to Blue */
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    margin-top: 1rem;
+  }
+  
+  .emailBtn:hover,
+  .talkBtn:hover {
+    transform: scale(1.05);
+  }
+  
