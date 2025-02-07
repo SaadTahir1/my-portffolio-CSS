@@ -1,8 +1,9 @@
 import { FunctionComponent } from "react";
 import styles from "../styles/projectNavbar.module.css"; // Import custom CSS
+import { Category } from "../../../type";
 
 const ProjectNavbar: FunctionComponent<{
-  handleFilterCategory: (category: string) => void;
+  handleFilterCategory: (category: Category | "all") => void;
   active: string;
 }> = ({ handleFilterCategory, active }) => {
   return (

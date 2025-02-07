@@ -24,4 +24,4 @@ export interface Skill {
     key_techs: string[];
   }
   
-  export type Category = "react" | "node" | "express" | "django" | "mongo";
+  export type Category = "react" | "node" | "express" | "django" | "mongo" | "nextjs";
